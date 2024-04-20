@@ -1,6 +1,7 @@
 import ProjectCard from "./components/Projets/Card";
 import Competences from "./components/Compétences/Competences";
 import Contact from "./components/Contact/Contact";
+import { Link } from "react-router-dom";
 
 function Index() {
     return (
@@ -11,13 +12,13 @@ function Index() {
                         <h1 className="text-6xl mb-3">Mathéo BATELIER</h1>
                         <p className="font-thin text-xl mb-10">Actuellement en 2ème année d'étude<br />
                             de développement web à la Normandie Web School</p>
-                        <a href="/cv" className="cursor-pointer"><button className="bg-blue-700 rounded-full px-10 py-2">Mon CV</button></a>
+                        <Link to="/cv" className="cursor-pointer"><button className="bg-blue-700 rounded-full px-10 py-2">Mon CV</button></Link>
                     </div>
                 </header>
                 <main className="mt-36 pb-36">
                     <div className="flex justify-between px-24">
                         <h2 className="text-2xl font-semibold">Mes projets Web</h2>
-                        <h2 className="text-2xl"><a href="/" className="underline">Voir plus</a></h2>
+                        <h2 className="text-2xl"><Link to="/projets" className="underline">Voir plus</Link></h2>
                     </div>
                     <div className="mt-12 flex flex-wrap justify-evenly">
                         <ProjectCard
